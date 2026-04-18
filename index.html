@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Shubham Kumar — AI/ML Engineer Portfolio</title>
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.png.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Exo+2:wght@300;400;600;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div id="cursor"></div>
+  <div id="cursor-trail"></div>
+
+  <!-- BACKGROUND CANVAS -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- CIRCUIT DECORATION -->
+  <div class="circuit-deco top-left"></div>
+  <div class="circuit-deco bottom-right"></div>
+
+  <!-- ══════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════ -->
+  <nav id="navbar">
+    <!-- <div class="nav-brand">
+      <span class="brand-bracket">&lt;</span>SK<span class="brand-slash">/</span><span class="brand-bracket">&gt;</span>
+    </div> -->
+    <div class="nav-brand">
+  <a href="#home" style="text-decoration: none; color: inherit; display: inline-block;">
+    <span class="brand-bracket">&lt;</span>SK<span class="brand-slash">/</span><span class="brand-bracket">&gt;</span>
+  </a>
+</div>
+
+    <ul class="nav-menu">
+      <li><a href="#home" class="nav-a active">Home</a></li>
+      <li><a href="#about" class="nav-a">About</a></li>
+      <li><a href="#skills" class="nav-a">Skills</a></li>
+      <li><a href="#projects" class="nav-a">Projects</a></li>
+      <li><a href="#contact" class="nav-a">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="ShubhamResume.pdf" download="Shubham_Kumar_Resume.pdf" class="resume-nav-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+          <polyline points="7 10 12 15 17 10"/>
+          <line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+        Resume
+      </a>
+      <button class="ham-btn" id="ham-btn"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mob-menu" id="mob-menu">
+    <a href="#home" class="mob-a">Home</a>
+    <a href="#about" class="mob-a">About</a>
+    <a href="#skills" class="mob-a">Skills</a>
+    <a href="#projects" class="mob-a">Projects</a>
+    <a href="#contact" class="mob-a">Contact</a>
+  </div>
+
+  <main>
+
+    <!-- ══════════════════════════════════
+         HERO SECTION
+    ══════════════════════════════════ -->
+    <section id="home" class="hero-section">
+      <div class="hex-grid"></div>
+
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span class="tag-dot"></span>
+          <span class="tag-line"></span>
+          Aspiring Artificial Intelligence &amp; Machine Learning Engineer
+          <span class="tag-line"></span>
+        </div>
+
+        <h1 class="hero-h1">
+          <span class="h1-hi">नमस्ते, I'm</span>
+          <span class="h1-name">SHUBHAM<br><span class="h1-name-accent">KUMAR</span></span>
+        </h1>
+
+        <div class="hero-roles">
+          <span class="role-prefix">{ </span><span id="role-text"></span><span class="role-suffix"> }</span>
+        </div>
+
+        <p class="hero-para">
+          Passionate AI/ML engineer crafting intelligent systems that learn, adapt &amp; solve real-world problems. From neural networks to generative AI — building tomorrow, today.
+        </p>
+
+        <div class="hero-btns">
+          <a href="#projects" class="hbtn hbtn-primary">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="5 3 19 12 5 21 5 3"/>
+            </svg>
+            View My Work
+          </a>
+          <a href="#contact" class="hbtn hbtn-outline">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            Let's Connect
+          </a>
+          <a href="ShubhamResume.pdf" download="Shubham_Kumar_Resume.pdf" class="hbtn hbtn-ghost">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Download CV
+          </a>
+        </div>
+
+        <div class="hero-stack">
+          <span class="stack-chip">🧠 ML</span>
+          <span class="stack-chip">🔥 Deep Learning</span>
+          <span class="stack-chip">🌐 NLP</span>
+          <span class="stack-chip">🤖 GenAI</span>
+          <span class="stack-chip">📊 Data Science</span>
+          <span class="stack-chip">☁️ MLOps</span>
+          <span class="stack-chip">⚡ Python</span>
+          <span class="stack-chip">🎯 CV</span>
+        </div>
+      </div>
+
+      <!-- Hero Avatar Brain Graphic -->
+      <div class="hero-visual">
+        <div class="brain-wrap" id="brain-wrap">
+          <div class="brain-ring r1"></div>
+          <div class="brain-ring r2"></div>
+          <div class="brain-ring r3"></div>
+          <div class="brain-core">
+            <!-- for sk -->
+            <!-- <div class="brain-initials">SK</div> -->
+            <!-- Uncomment below and add your photo as 'shubham-photo.jpg' -->
+            <img src="shubh1.jpg" alt="Shubham Kumar" class="brain-photo" />
+          </div>
+        </div>
+        <div class="ai-node n1">🧠</div>
+        <div class="ai-node n2">⚡</div>
+        <div class="ai-node n3">🔥</div>
+        <div class="ai-node n4">🌐</div>
+      </div>
+
+      <div class="scroll-cue">
+        <div class="scroll-line"></div>
+        <span>SCROLL</span>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         ABOUT SECTION
+    ══════════════════════════════════ -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="sec-label reveal">
+          <span class="sec-num">01</span>
+          <span class="sec-slash">//</span>
+          About Me
+        </div>
+
+        <div class="about-grid">
+          <div class="about-left reveal">
+            <h2 class="sec-title">Building the Future<br>with <span>Intelligence</span></h2>
+            <p class="about-p">I'm <strong>Shubham Kumar</strong>, a B.Tech student in <strong>AI &amp; Machine Learning</strong> with a fire for building systems that think. I bridge the gap between academic research and production-ready AI.</p>
+            <p class="about-p">Every dataset is a story waiting to be decoded. Every model is a step towards machines that truly understand the world around us.</p>
+
+            <div class="about-stats">
+              <div class="astat">
+                <div class="astat-n" data-target="15">0</div>
+                <div class="astat-l">Projects Built</div>
+              </div>
+              <div class="astat-div"></div>
+              <div class="astat">
+                <div class="astat-n" data-target="8">0</div>
+                <div class="astat-l">Certifications</div>
+              </div>
+              <div class="astat-div"></div>
+              <div class="astat">
+                <div class="astat-n" data-target="3">0</div>
+                <div class="astat-l">Years Learning</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-right reveal">
+            <div class="info-cards">
+              <div class="info-card">
+                <div class="ic-icon">🎓</div>
+                <div class="ic-body">
+                  <div class="ic-title">Education</div>
+                  <div class="ic-val">B.Tech — AI &amp; ML</div>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="ic-icon">📍</div>
+                <div class="ic-body">
+                  <div class="ic-title">Location</div>
+                  <div class="ic-val">India 🇮🇳</div>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="ic-icon">💼</div>
+                <div class="ic-body">
+                  <div class="ic-title">Status</div>
+                  <div class="ic-val">Open to Opportunities</div>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="ic-icon">🎯</div>
+                <div class="ic-body">
+                  <div class="ic-title">Focus</div>
+                  <div class="ic-val">GenAI · NLP · CV</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         SKILLS SECTION
+    ══════════════════════════════════ -->
+    <section id="skills" class="section alt-section">
+      <div class="container">
+        <div class="sec-label reveal center-sec">
+          <span class="sec-num">02</span>
+          <span class="sec-slash">//</span>
+          Technical Skills
+        </div>
+        <h2 class="sec-title center-sec reveal">My <span>Competencies</span></h2>
+
+        <div class="skills-grid">
+          <div class="sk-card reveal">
+            <div class="sk-head">
+              <div class="sk-emoji">🧠</div>
+              <div class="sk-title">Machine Learning</div>
+            </div>
+            <div class="sk-pills">
+              <span class="spill">Scikit-learn</span><span class="spill">XGBoost</span>
+              <span class="spill">SVM</span><span class="spill">Random Forest</span>
+            </div>
+            <div class="sk-bar-wrap">
+              <div class="sk-bar-top"><span>Proficiency</span><span>90%</span></div>
+              <div class="sk-bar"><div class="sk-fill" data-w="90"></div></div>
+            </div>
+          </div>
+
+          <div class="sk-card reveal">
+            <div class="sk-head">
+              <div class="sk-emoji">🔥</div>
+              <div class="sk-title">Deep Learning</div>
+            </div>
+            <div class="sk-pills">
+              <span class="spill">PyTorch</span><span class="spill">TensorFlow</span>
+              <span class="spill">Keras</span><span class="spill">CNNs</span>
+            </div>
+            <div class="sk-bar-wrap">
+              <div class="sk-bar-top"><span>Proficiency</span><span>85%</span></div>
+              <div class="sk-bar"><div class="sk-fill" data-w="85"></div></div>
+            </div>
+          </div>
+
+          <div class="sk-card reveal">
+            <div class="sk-head">
+              <div class="sk-emoji">🌐</div>
+              <div class="sk-title">NLP &amp; GenAI</div>
+            </div>
+            <div class="sk-pills">
+              <span class="spill">Transformers</span><span class="spill">BERT</span>
+              <span class="spill">LangChain</span><span class="spill">HuggingFace</span>
+            </div>
+            <div class="sk-bar-wrap">
+              <div class="sk-bar-top"><span>Proficiency</span><span>80%</span></div>
+              <div class="sk-bar"><div class="sk-fill" data-w="80"></div></div>
+            </div>
+          </div>
+
+          <div class="sk-card reveal">
+            <div class="sk-head">
+              <div class="sk-emoji">⚡</div>
+              <div class="sk-title">Programming</div>
+            </div>
+            <div class="sk-pills">
+              <span class="spill">Python</span><span class="spill">C++</span>
+              <span class="spill">SQL</span><span class="spill">Bash</span>
+            </div>
+            <div class="sk-bar-wrap">
+              <div class="sk-bar-top"><span>Proficiency</span><span>92%</span></div>
+              <div class="sk-bar"><div class="sk-fill" data-w="92"></div></div>
+            </div>
+          </div>
+
+          <div class="sk-card reveal">
+            <div class="sk-head">
+              <div class="sk-emoji">📊</div>
+              <div class="sk-title">Data Science</div>
+            </div>
+            <div class="sk-pills">
+              <span class="spill">Pandas</span><span class="spill">NumPy</span>
+              <span class="spill">Matplotlib</span><span class="spill">Seaborn</span>
+            </div>
+            <div class="sk-bar-wrap">
+              <div class="sk-bar-top"><span>Proficiency</span><span>88%</span></div>
+              <div class="sk-bar"><div class="sk-fill" data-w="88"></div></div>
+            </div>
+          </div>
+
+          <div class="sk-card reveal">
+            <div class="sk-head">
+              <div class="sk-emoji">☁️</div>
+              <div class="sk-title">MLOps &amp; Cloud</div>
+            </div>
+            <div class="sk-pills">
+              <span class="spill">Docker</span><span class="spill">AWS</span>
+              <span class="spill">MLflow</span><span class="spill">FastAPI</span>
+            </div>
+            <div class="sk-bar-wrap">
+              <div class="sk-bar-top"><span>Proficiency</span><span>75%</span></div>
+              <div class="sk-bar"><div class="sk-fill" data-w="75"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         PROJECTS SECTION
+    ══════════════════════════════════ -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="sec-label reveal center-sec">
+          <span class="sec-num">03</span>
+          <span class="sec-slash">//</span>
+          Projects
+        </div>
+        <h2 class="sec-title center-sec reveal">Featured <span>Work</span></h2>
+
+        <div class="proj-grid">
+          <div class="proj-card reveal">
+            <div class="proj-glow"></div>
+            <div class="proj-top">
+              <span class="proj-id">P-001</span>
+              <span class="proj-emoji">👁️</span>
+            </div>
+            <h3 class="proj-title">Neural Vision Classifier</h3>
+            <p class="proj-desc">Deep learning system achieving 97.3% accuracy on multi-class image classification using custom ResNet with attention mechanisms.</p>
+            <div class="proj-tags">
+              <span class="ptag">PyTorch</span><span class="ptag">OpenCV</span><span class="ptag">CUDA</span><span class="ptag">Streamlit</span>
+            </div>
+            <div class="proj-actions">
+              <a href="#" target="_blank" class="pact-ghost">🔗 Code</a>
+              <a href="#" target="_blank" class="pact-solid">🚀 Live Demo</a>
+            </div>
+          </div>
+
+          <div class="proj-card reveal">
+            <div class="proj-glow"></div>
+            <div class="proj-top">
+              <span class="proj-id">P-002</span>
+              <span class="proj-emoji">💬</span>
+            </div>
+            <h3 class="proj-title">Sentiment Intelligence</h3>
+            <p class="proj-desc">Real-time NLP pipeline processing 10k tweets/min with fine-tuned BERT for aspect-based sentiment analysis.</p>
+            <div class="proj-tags">
+              <span class="ptag">BERT</span><span class="ptag">HuggingFace</span><span class="ptag">FastAPI</span>
+            </div>
+            <div class="proj-actions">
+              <a href="#" target="_blank" class="pact-ghost">🔗 Code</a>
+              <a href="#" target="_blank" class="pact-solid">🚀 Live Demo</a>
+            </div>
+          </div>
+
+          <div class="proj-card reveal">
+            <div class="proj-glow"></div>
+            <div class="proj-top">
+              <span class="proj-id">P-003</span>
+              <span class="proj-emoji">🤖</span>
+            </div>
+            <h3 class="proj-title">RAG Knowledge Bot</h3>
+            <p class="proj-desc">LLM-powered Q&amp;A with retrieval-augmented generation using vector databases for hallucination-free responses.</p>
+            <div class="proj-tags">
+              <span class="ptag">LangChain</span><span class="ptag">ChromaDB</span><span class="ptag">GPT-4</span>
+            </div>
+            <div class="proj-actions">
+              <a href="#" target="_blank" class="pact-ghost">🔗 Code</a>
+              <a href="#" target="_blank" class="pact-solid">🚀 Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         CONTACT SECTION🐙💼📧
+    ══════════════════════════════════ -->
+    <section id="contact" class="section alt-section">
+      <div class="container">
+        <div class="sec-label reveal center-sec">
+          <span class="sec-num">04</span>
+          <span class="sec-slash">//</span>
+          Contact
+        </div>
+        <h2 class="sec-title center-sec reveal">Let's <span>Collaborate</span></h2>
+
+        <div class="contact-layout reveal">
+          <div class="contact-links">
+            <a href="https://github.com/shubham993992"  target="_blank" class="clink">
+              <div class="clink-icon" id="github"><i class="fab fa-github fa-2x"></i></div>
+              <div class="clink-text">
+                <div class="clink-label">GitHub</div>
+                <div class="clink-val">Shubham Kumar</div>
+              </div>
+              <div class="clink-arrow">→</div>
+            </a>
+            <a href="https://www.linkedin.com/in/shubhamkumar9939?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="clink">
+              <div class="clink-icon" id="linkedin"><i class="fab fa-linkedin fa-2x"></i></div>
+              <div class="clink-text">
+                <div class="clink-label">LinkedIn</div>
+                <div class="clink-val">Shubham Kumar</div>
+              </div>
+              <div class="clink-arrow">→</div>
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shubham776695@gmail.com" target="_blank" class="clink">
+              <div class="clink-icon" id="gmail"><i class="fas fa-envelope fa-2x"></i></div>
+              <div class="clink-text">
+                <div class="clink-label">Gmail</div>
+                <div class="clink-val">shubham776695@gmail.com</div>
+              </div>
+              <div class="clink-arrow">→</div>
+            </a>
+          </div>
+
+          <div class="resume-cta">
+            <div class="rcta-text">Ready to build something amazing together?</div>
+            <a href="ShubhamResume.pdf" download="Shubham_Kumar_Resume.pdf" class="rcta-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              Download Full Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-brand">&lt;SK /&gt;</span>
+      <span class="footer-text">&copy; 2026 Shubham Kumar.  All rights reserved.</span>
+      <span class="footer-brand">Shubham Kumar</span>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════
+       AIML CHATBOT (JSON-powered)💬
+  ══════════════════════════════════ -->
+  <div class="cb-fab" id="cb-fab">
+    <div class="cb-fab-ring"></div>
+    <div class="cb-fab-icon open-icon"><i class="fas fa-comment-dots"></i></div>
+    <div class="cb-fab-icon close-icon" style="display:none">✕</div>
+  </div>
+
+  <div class="cb-window" id="cb-window">
+    <div class="cb-header">
+      <div class="cb-header-left">
+        <div class="cb-bot-avatar">🤖</div>
+        <div>
+          <div class="cb-bot-name">Shubham's-AI-Bot</div>
+          <div class="cb-bot-status"><span class="cb-online-dot"></span>Online · ASK ME ABOUT SHUBHAM</div>
+        </div>
+      </div>
+      <button class="cb-close" id="cb-close">✕</button>
+    </div>
+
+    <div class="cb-messages" id="cb-messages"></div>
+
+    <div class="cb-chips" id="cb-chips">
+      <button class="cb-chip" data-category="skills">🛠 Skills</button>
+      <button class="cb-chip" data-category="projects">💼 Projects</button>
+      <button class="cb-chip" data-category="contact">📬 Contact</button>
+      <button class="cb-chip" data-category="resume">📄 Resume</button>
+      <button class="cb-chip" data-category="education">🎓 Education</button>
+      <button class="cb-chip" data-category="experience">💪 Experience</button>
+    </div>
+
+    <div class="cb-input-row">
+      <input id="cb-input" class="cb-input" type="text" placeholder="Ask about Shubham…" autocomplete="off" />
+      <button class="cb-send" id="cb-send">➤</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

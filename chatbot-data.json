@@ -1,0 +1,54 @@
+{
+  "botName": "AI-Bot",
+  "greeting": "Namaste! 🙏 I'm **AI-Bot** — Shubham's AI assistant . Ask me about his skills, projects, contact, resume, education, or experience!",
+  
+  "categories": {
+    "skills": {
+      "keywords": ["skill", "tech", "know", "competenc", "technology", "stack", "language", "framework", "tool", "proficiency", "expert", "what can", "abilities"],
+      "response": "Shubham's technical skills include:\n\n**🧠 Machine Learning** (90%)\n• Scikit-learn,  SVM, Random Forest\n\n**🔥 Deep Learning** (85%)\n• PyTorch, TensorFlow, Keras, CNNs\n\n**🌐 NLP & GenAI** (80%)\n• Transformers, BERT, LangChain, HuggingFace\n\n**⚡ Programming** (92%)\n• Python, C++, SQL, Bash\n\n**📊 Data Science** (88%)\n• Pandas, NumPy, Matplotlib, Seaborn\n\n**☁️ MLOps & Cloud** (75%)\n• Docker, AWS, MLflow, FastAPI"
+    },
+    
+    "projects": {
+      "keywords": ["project", "work", "built", "portfolio", "demo", "app", "system", "model", "create", "develop"],
+      "response": "Shubham's featured projects:\n\n**👁️ Neural Vision Classifier**\n• 97.3% accuracy image classification using ResNet with attention\n• Tech: PyTorch, OpenCV, CUDA, Streamlit\n\n**💬 Sentiment Intelligence**\n• Real-time NLP pipeline processing 10k tweets/min\n• Tech: BERT, HuggingFace, FastAPI, Redis\n\n**🤖 RAG Knowledge Bot**\n• LLM-powered Q&A with vector databases\n• Tech: LangChain, ChromaDB, GPT-4, Docker\n\n**🏥 Medical Diagnosis AI**\n• Pneumonia detection from chest X-rays\n• Tech: TensorFlow, GradCAM, DICOM, Flask\n\n**📈 Trading Bot**\n• Reinforcement learning agent with PPO algorithm\n• Tech: RL/PPO, Gymnasium, Pandas, Plotly"
+    },
+    
+    "contact": {
+      "keywords": ["contact", "reach", "email", "connect", "linkedin", "github", "twitter", "message", "hire", "touch", "social"],
+      "response": "You can connect with Shubham through:\n\n**🐙 GitHub**: https://github.com/shubham993992\n**💼 LinkedIn**: www.linkedin.com/in/shubhamkumar9939\n**📧 Gmail**: shubham77669@gmail.com\n**🐦 Twitter/X**: https://x.com/shubhamk97251\n\nAll links are available in the **Contact** section below! 👇"
+    },
+    
+    "resume": {
+      "keywords": ["resume", "cv", "download", "pdf", "curriculum", "vitae", "bio"],
+      "response": "You can download Shubham's resume using:\n\n• The **Resume** button in the top navbar\n• The **Download CV** button in the hero section\n• The big **Download Full Resume** button in the Contact section\n\nAll options will download the PDF directly! 📄"
+    },
+    
+    "education": {
+      "keywords": ["education", "college", "university", "btech", "degree", "study", "course", "aiml", "qualification", "academic", "school"],
+      "response": "**🎓 Education Background**\n\n• **B.Tech in Artificial Intelligence & Machine Learning** (Current)\n• Focus areas: Deep Learning, NLP, Computer Vision, GenAI\n• Continuous learner with 8+ certifications in AI/ML\n• Active participant in hackathons and research projects\n\nShubham combines academic excellence with hands-on project experience to build production-ready AI systems."
+    },
+    
+    "experience": {
+      "keywords": ["experience", "internship", "work", "job", "career", "professional", "industry", "company", "role", "position"],
+      "response": "**💪 Professional Experience**\n\n**AI/ML Intern** (Remote)\n• Built and deployed 3 production ML models\n• Improved model accuracy by 15% through hyperparameter tuning\n• Collaborated with cross-functional teams\n\\n• Mentored junior students in deep learning\n\n**Open to new opportunities!** 🚀 Shubham is actively seeking AI/ML Engineer roles where he can make an impact."
+    },
+    
+    "about": {
+      "keywords": ["about", "who", "shubham", "introduce", "background", "describe", "bio", "himself"],
+      "response": "**👨‍💻 About Shubham Kumar**\n\nShubham is a passionate B.Tech student specializing in **AI & Machine Learning** 🧠. He bridges the gap between academic research and production-ready AI.\n\n**Mission**: Build intelligent systems that truly understand the world around us.\n\n**Focus Areas**: GenAI, NLP, Computer Vision, Data Science\n\n**Status**: Open to exciting opportunities! 🌟\n\nEvery dataset is a story waiting to be decoded. Every model is a step towards machines that think."
+    }
+  },
+  
+  "fallbackResponses": [
+    "Hmm, I'm not sure about that! 🤔 Try asking about Shubham's **skills**, **projects**, **contact info**, **resume**, **education**, or **experience**.",
+    "I didn't quite get that. Ask me about Shubham's **work**, **tech stack**, or his **background**! 💬",
+    "That's outside my knowledge base 😄 Try one of the suggestion chips above or ask about Shubham's **AI projects**, **certifications**, or **social links**!",
+    "Not sure about that! Here's what I can help with:\n• Skills & Technologies\n• Projects & Portfolio\n• Contact Information\n• Resume Download\n• Education Background\n• Work Experience"
+  ],
+  
+  "farewellResponses": [
+    "Thanks for chatting! 👋 Feel free to reach out to Shubham anytime. Stay curious! 🧠",
+    "Goodbye! Don't forget to check out Shubham's amazing projects in the portfolio! 🚀",
+    "See you later! Remember — Shubham is open to collaborations and exciting opportunities! 🌟"
+  ]
+}
