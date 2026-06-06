@@ -799,12 +799,12 @@ main {
   color: var(--text);
   margin-top: 3px;
 }
-
+/* 260,18 */
 /* ── SKILLS ─────────────────────────────────────── */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 20px;
 }
 
 .sk-card {
