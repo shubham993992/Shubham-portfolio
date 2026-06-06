@@ -489,7 +489,7 @@ main {
 .hero-stack {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 15px;
 }
 
 .stack-chip {
