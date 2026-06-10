@@ -2,6 +2,17 @@
    SHUBHAM KUMAR — AIML PORTFOLIO | JSON Powered Chatbot
    Bhagwa Theme · All interactions & animations
 ═══════════════════════════════════════════════════ */
+//for visitor count badge
+fetch('https://api.countapi.xyz/hit/shubham-portfolio993992/visits')
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById('visitCount').textContent =
+      data.value.toLocaleString();
+  })
+  .catch(error => {
+    console.error('Visitor count error:', error);
+    document.getElementById('visitCount').textContent = '0';
+  });
 
 (function() {
   // ========== 1. CUSTOM CURSOR ==========
