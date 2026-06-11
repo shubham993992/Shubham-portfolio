@@ -10,7 +10,7 @@
     
     "projects": {
       "keywords": ["project", "work", "built", "portfolio", "demo", "app", "system", "model", "create", "develop"],
-      "response": "Shubham's featured projects:\n\n**👁️ Neural Vision Classifier**\n• 97.3% accuracy image classification using ResNet with attention\n• Tech: PyTorch, OpenCV, CUDA, Streamlit\n\n**💬 Sentiment Intelligence**\n• Real-time NLP pipeline processing 10k tweets/min\n• Tech: BERT, HuggingFace, FastAPI, Redis\n\n**🤖 RAG Knowledge Bot**\n• LLM-powered Q&A with vector databases\n• Tech: LangChain, ChromaDB, GPT-4, Docker\n\n**🏥 Medical Diagnosis AI**\n• Pneumonia detection from chest X-rays\n• Tech: TensorFlow, GradCAM, DICOM, Flask\n\n**📈 Trading Bot**\n• Reinforcement learning agent with PPO algorithm\n• Tech: RL/PPO, Gymnasium, Pandas, Plotly"
+      "response": "Shubham's featured projects:\n\n**🍿Movie recommendation system**\n• 97.3% accuracy Recommend the similar types of movies according to your search \n• Tech:Flask, NumPy, Pandas , Scikit-learn, TMDB API\n\n**💬 Sentiment Intelligence**\n• Real-time NLP pipeline processing 10k tweets/min\n• Tech: BERT, HuggingFace, FastAPI, Redis\n\n**🤖 RAG Knowledge Bot**\n• LLM-powered Q&A with vector databases\n• Tech: LangChain, ChromaDB, GPT-4, Docker\n\n**🏥 Medical Diagnosis AI**\n• Pneumonia detection from chest X-rays\n• Tech: TensorFlow, GradCAM, DICOM, Flask\n\n**📈 Trading Bot**\n• Reinforcement learning agent with PPO algorithm\n• Tech: RL/PPO, Gymnasium, Pandas, Plotly"
     },
     
     "contact": {
